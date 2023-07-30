@@ -53,7 +53,7 @@ const App = () => {
               </svg>
             </div>
             <div className="plan">
-              <h4 id="plan-title">${currentPlan.plan}</h4>
+              <h4 id="plan-title">{currentPlan.plan}</h4>
               <p id="plan-price">${currentPlan.price}</p>
             </div>
             <select onChange={changeHandler} className="select" id="select">
