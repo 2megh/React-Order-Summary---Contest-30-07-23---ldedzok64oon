@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from "react";
+import React, {useState } from "react";
 import "../styles/App.css";
 import picture from "../assets/illustration-hero.png";
 
@@ -10,7 +10,7 @@ const options = [
 ];
 
 const App = () => {
-  const [currentPlan, setCurrentPlan] = useState(options[0]);
+  const[currentPlan, setCurrentPlan] = useState(options[0]);
 
   const changeHandler = (e) => {
    setCurrentPlan(options[e.target.value]);
