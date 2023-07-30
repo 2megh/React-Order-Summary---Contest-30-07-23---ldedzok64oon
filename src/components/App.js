@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { Fragment, useState } from "react";
 import "../styles/App.css";
 import picture from "../assets/illustration-hero.png";
 
@@ -54,7 +54,7 @@ const App = () => {
             </div>
             <div className="plan">
               <h4 id="plan-title">{currentPlan.plan}</h4>
-              <p id="plan-price">${currentPlan.price}</p>
+              <p id="plan-price">{currentPlan.price}</p>
             </div>
             <select onChange={changeHandler} className="select" id="select">
               <option disabled selected>
